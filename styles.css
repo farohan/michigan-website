@@ -17,6 +17,10 @@ body {
     overflow-y: auto;
 }
 
+ul, ol {
+    font-size: 1.75rem;
+}
+
 .hero {
     height: 100vh;
     width: 100vw;
