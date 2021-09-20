@@ -45,6 +45,16 @@ ul, ol {
     color: white;
 }
 
+#up-scroller {
+    position: fixed;
+    top: 0;
+}
+
+#down-scroller {
+    position: fixed;
+    bottom: 0;
+}
+
 .cards {
     display: flex;
     flex-direction: column;
