@@ -1,5 +1,8 @@
 :root {
     --text-color: rgb(85, 81, 81);
+    --stormy-gray-faded: rgba(85, 81, 81, 0.55);
+    --stormy-gray-strong: rgb(85, 81, 81, 0.9);
+    --faded-white: rgba(255, 255, 255, 0.7);
 }
 
 * {
@@ -45,13 +48,43 @@ ul, ol {
     color: white;
 }
 
-#up-scroller {
+.navigate-btn {
+    background-color: var(--stormy-gray-faded);
+    width: 20vw;
+    border: none;
     position: fixed;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigate-btn:hover {
+    background-color: var(--stormy-gray-strong);
+}
+
+#menu-btn {
+    height: 10rem;
+    width: 10rem;
+    font-size: 3.75rem;
+    border: none;
+    border-radius: 100%;
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: background-color 0.3s;
+}
+
+#menu-btn:hover {
+    background-color: var(--faded-white);
+}
+
+#up-scroller {
     top: 0;
 }
 
 #down-scroller {
-    position: fixed;
     bottom: 0;
 }
 
