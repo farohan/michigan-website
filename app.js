@@ -10,13 +10,13 @@ const downScroller = document.getElementById('down-scroller');
 const upScroller = document.getElementById('up-scroller');
 
 function slideScrollerDown() {
-    window.scrollBy(100, window.innerHeight);
+    window.scrollBy(0, window.innerHeight);
 }
 
 downScroller.addEventListener('click', slideScrollerDown);
 
 function slideScrollerUp() {
-    window.scrollBy(100, -window.innerHeight);
+    window.scrollBy(0, -window.innerHeight);
 }
 
 upScroller.addEventListener('click', slideScrollerUp);
