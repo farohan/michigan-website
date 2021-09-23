@@ -1,11 +1,7 @@
-console.log(`outerHeight: ${window.outerHeight}`);
-console.log(`outerWidth: ${window.outerWidth}`);
-console.log(`innerHeight: ${window.innerHeight}`);
-console.log(`innerWidth: ${window.innerWidth}`);
-let browserHeight = window.innerHeight;
-console.log(`1vh = ${browserHeight / 100}px in this computer.`);
+//Welcome to app.js! This is where I will write all my code for the michigan website.
 
 //Scrolling enabled
+
 const downScroller = document.getElementById('down-scroller');
 const upScroller = document.getElementById('up-scroller');
 
@@ -20,3 +16,15 @@ function slideScrollerUp() {
 }
 
 upScroller.addEventListener('click', slideScrollerUp);
+
+//Side Menu 
+
+const sidebar = document.getElementById('side-menu');
+
+function openSesame() {
+    if (sidebar.style.width == '33vw') 
+        sidebar.style.width = '0';
+    else
+        sidebar.style.width = '33vw';
+}
+
