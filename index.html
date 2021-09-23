@@ -12,9 +12,41 @@
 <body>
     <section class="hero">
         <h1 class="hero-title">Michigan - Splendor of the Industrial Midwest</h1>
-        <button id="menu-btn">☰</button>
+        <button id="menu-btn" onclick="openSesame()">☰</button>
         <button class="navigate-btn" id="up-scroller"><img src="expand_less_white_36dp.svg" alt=""></button>
         <button class="navigate-btn" id="down-scroller"><img src="expand_more_white_36dp.svg" alt=""></button>
+    </section>
+    <section class="sidebar" id="side-menu">
+        <div class="side-item">
+            <p class="side-item-text">The Land</p>
+        </div>
+        <div class="side-item">
+            <p class="side-item-text">The Climate</p>
+        </div>
+        <div class="side-item">
+            <p class="side-item-text">Plants and Animals</p>
+        </div>
+        <div class="side-item">
+            <p class="side-item-text">Major Cities</p>
+        </div>
+        <div class="side-item">
+            <p class="side-item-text">State Demographics</p>
+        </div>
+        <div class="side-item">
+            <p class="side-item-text">Tourist Attractions</p>
+        </div>
+        <div class="side-item">
+            <p class="side-item-text">Significant Industries</p>
+        </div>
+        <div class="side-item">
+            <p class="side-item-text">Colleges and Universities</p>
+        </div>
+        <div class="side-item">
+            <p class="side-item-text">Michigan's Symbols</p>
+        </div>
+        <div class="side-item">
+            <p class="side-item-text">Extras</p>
+        </div>
     </section>
     <section class="cards">
         <div class="card card--land">
@@ -25,8 +57,20 @@
                 <h2 class="card-title">The Land</h2>
                 <p class="card-desc"> Michigan is teeming with thick evergreen and deciduous forests. 
                     Water surrounds you everywhere you go, whether it be a pond, river, lake, or even dew drops. 
-                    The flat land and frequent rains make it perfect for agriculture, 
+                    The flat land and frequent rains make it ideal for agriculture, 
                     while allowing it to sustain industry. </p>
+            </div>
+        </div>
+        <div class="card card--climate">
+            <div class="part-one">
+                <h2 class="card-title reversed">The Climate</h2>
+                <p class="card-desc reversed"> The climate in Michigan is like that of any temperate zone country. 
+                    Five months of warmth and seven months of heavy snows and piercing winds.
+                    Add abundant freshwater into the scene... and you have Michigan.
+                </p>
+            </div>
+            <div class="part-two">
+                <img class="card-img" title="Snowy Forest" src="https://m.media-amazon.com/images/I/61qBaKk+88L._SL1000_.jpg" alt="snow in michigan">
             </div>
         </div>
         <div class="card card--plants-animals">
@@ -58,11 +102,8 @@
         </div>
         <div class="card card--cities">
             <div class="part-one">
-                <img class="card-img" title="Detroit, MI" src="https://cdn.britannica.com/25/100325-050-82D6E189/Detroit-Michigan.jpg" alt="detroit, michigan">
-            </div>
-            <div class="part-two">
-                <h2 class="card-title">Major Cities</h2>
-                <p class="card-desc">Michigan has several major cities, 
+                <h2 class="card-title reversed">Major Cities</h2>
+                <p class="card-desc reversed">Michigan has several major cities, 
                     each with its own vibrant culture and history. Those include:
                     <ul>
                         <li>Detroit</li>
@@ -71,37 +112,32 @@
                         <li>Ann Arbor</li>
                     </ul>
                 </p>
-                <p class="card-desc">
+                <p class="card-desc reversed">
                     Out of these, Detroit is the largest and most famous city in Michigan.
                     Right by it is Dearborn, where the famous inventor and businessman, Henry Ford, was born.
                     The capital city is Lansing. And Ann Arbor is where the University of Michigan is located.
                 </p>
             </div>
+            <div class="part-two">
+                <img class="card-img" title="Detroit, MI" src="https://cdn.britannica.com/25/100325-050-82D6E189/Detroit-Michigan.jpg" alt="detroit, michigan">
+            </div>
+        </div>
+        <div class="card card--demographics">
+            <h2 class="card-title">State Demographics</h2>
+            <p class="card-desc"> Michigan is the best! </p>
         </div>
         <div class="card card--tourist">
             <div class="part-one">
-                <img class="card-img" title="Mackinac Bridge" src="https://cdn.britannica.com/48/97348-050-D17E4F24/Mackinac-Bridge-Straits-of-Michigan.jpg" alt="mackinac bridge">
-            </div>
-            <div class="part-two">
-                <h2 class="card-title">Tourist Attractions</h2>
-                <p class="card-desc"> There's many things to see in Michigan. 
+                <h2 class="card-title reversed">Tourist Attractions</h2>
+                <p class="card-desc reversed"> There's many things to see in Michigan. 
                     From the memorable Lake Michigan and Sleeping Bear sand dunes
                     to Mackinac Island and its iconic bridge to the 
                     beautiful Belle Isle Park in the Detroit River.
                     These, along with more, represent the diversity of fun and culture in Michigan.
                 </p>
             </div>
-        </div>
-        <div class="card card--climate">
-            <div class="part-one">
-                <img class="card-img" title="Snowy Forest" src="https://m.media-amazon.com/images/I/61qBaKk+88L._SL1000_.jpg" alt="snow in michigan">
-            </div>
             <div class="part-two">
-                <h2 class="card-title">Climate</h2>
-                <p class="card-desc"> The climate in Michigan is like that of any temperate zone country. 
-                    Five months of warmth and seven months of heavy snows and piercing winds.
-                    Add abundant freshwater into the scene... and you have Michigan.
-                </p>
+                <img class="card-img" title="Mackinac Bridge" src="https://cdn.britannica.com/48/97348-050-D17E4F24/Mackinac-Bridge-Straits-of-Michigan.jpg" alt="mackinac bridge">
             </div>
         </div>
         <div class="card card--industry">
@@ -109,7 +145,7 @@
                 <img class="card-img" title="Power Plant" src="https://news.berkeley.edu/wp-content/uploads/2018/05/hunterpointpp2006.jpg" alt="power plant">
             </div>
             <div class="part-two">
-                <h2 class="card-title">Industry</h2>
+                <h2 class="card-title">Significant Industries</h2>
                 <p class="card-desc"> Michigan has several industries, especially the automobile industry. 
                     (No wonder it's a part of the Industrial Midwest.)
                     Here are the major ones:
@@ -124,19 +160,15 @@
         </div>
         <div class="card card--schools">
             <div class="part-one">
-                <img class="card-img" title="University of Michigan" src="https://michigan.law.umich.edu/sites/default/files/styles/primary_hero_scale_and_crop_630px_350px_/public/2021-04/UMLS_Beauty_2018_001_webbed_0.jpg?itok=h3CM8VPp" alt="university of michigan">
+                <h2 class="card-title reversed">Colleges and Universities</h2>
+                <p class="card-desc reversed"> Michigan is the best! </p>
             </div>
             <div class="part-two">
-                <h2 class="card-title">Colleges and Universities</h2>
-                <p class="card-desc"> Michigan is the best! </p>
+                <img class="card-img" title="University of Michigan" src="https://michigan.law.umich.edu/sites/default/files/styles/primary_hero_scale_and_crop_630px_350px_/public/2021-04/UMLS_Beauty_2018_001_webbed_0.jpg?itok=h3CM8VPp" alt="university of michigan">
             </div>
         </div>
         <div class="card card--state-pride">
             <h2 class="card-title">Michigan's Symbols</h2>
-            <p class="card-desc"> Michigan is the best! </p>
-        </div>
-        <div class="card card--demographics">
-            <h2 class="card-title">State Demographics</h2>
             <p class="card-desc"> Michigan is the best! </p>
         </div>
         <div class="card card--extras">
