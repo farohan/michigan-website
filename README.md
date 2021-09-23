@@ -1,4 +1,4 @@
-# michigan-website
+# Michigan Website
 
 Learn about Michigan in my "slideshow". 
 
