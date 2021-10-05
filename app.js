@@ -28,3 +28,4 @@ function openSesame() {
         sidebar.style.width = '33vw';
 }
 
+
