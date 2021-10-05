@@ -6,7 +6,6 @@
 }
 
 * {
-    /* Remember to change the font! */
     font-family: "Lato", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
     box-sizing: border-box;
@@ -60,7 +59,7 @@ ul, ol {
 
 .navigate-btn {
     background-color: var(--stormy-gray-faded);
-    width: 20vw;
+    width: 22.5vw;
     border: none;
     position: fixed;
     cursor: pointer;
@@ -164,4 +163,20 @@ ul, ol {
 .card-desc {
     font-size: 1.75rem;
     text-indent: 2rem;
+}
+
+/*For tablets*/
+
+@media screen and (max-width: 725px) {
+    .navigate-btn {
+        width: 50%;
+    }
+}
+
+/*For mobile devices*/
+
+@media screen and (max-width: 475px) {
+    .navigate-btn {
+        width: 75%;
+    }
 }
