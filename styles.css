@@ -3,6 +3,8 @@
     --stormy-gray-faded: rgba(85, 81, 81, 0.55);
     --stormy-gray-strong: rgb(85, 81, 81, 0.9);
     --faded-white: rgba(255, 255, 255, 0.7);
+    --michigan-green: rgba(5, 151, 49, 0.75);
+    --michigan-green-hover: rgb(5, 151, 49);
 }
 
 * {
@@ -30,7 +32,6 @@ p {
 
 a {
     color: var(--text-color);
-    font-weight: bold;
     text-decoration: none;
 }
 
@@ -83,11 +84,30 @@ ul, ol {
     position: fixed;
     top: 0;
     right: 0;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 #menu-btn:hover {
     background-color: var(--faded-white);
+    transform: rotate(45deg);
+}
+
+#back-to-top {
+    height: 5rem;
+    width: 5rem;
+    border: none;
+    font-size: 2.5rem;
+    background-color: var(--michigan-green);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: var(--michigan-green-hover);
 }
 
 #up-scroller {
@@ -104,7 +124,7 @@ ul, ol {
     z-index: 50;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     color: var(--text-color);
     position: fixed;
     top: 0;
@@ -154,6 +174,11 @@ ul, ol {
 
 .card-img {
     height: 35rem;
+    transition: transform 0.3s;
+}
+
+.card-img:hover {
+    transform: scale(0.9);
 }
 
 .card-title {
@@ -163,6 +188,10 @@ ul, ol {
 .card-desc {
     font-size: 1.75rem;
     text-indent: 2rem;
+}
+
+#symbol-link {
+    font-weight: bold;
 }
 
 /*For tablets*/
