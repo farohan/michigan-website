@@ -1,6 +1,6 @@
 # Michigan Website
 
-Learn about Michigan in my "slideshow". 
+Learn about Michigan in my slideshow. 
 
 Link: https://farohan.github.io/michigan-website/
 
