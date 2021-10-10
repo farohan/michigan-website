@@ -11,46 +11,68 @@
     <title>Michigan - Splendor of the Industrial Midwest</title>
 </head>
 <body>
+    <a id="top"></a>
     <section class="hero">
         <h1 class="hero-title">Michigan - Splendor of the Industrial Midwest</h1>
         <button id="menu-btn" onclick="openSesame()">☰</button>
+        <a href="#top"><button id="back-to-top">&#11014;</button></a>
         <button class="navigate-btn" id="up-scroller"><img src="icons/expand_less_white_36dp.svg" alt=""></button>
         <button class="navigate-btn" id="down-scroller"><img src="icons/expand_more_white_36dp.svg" alt=""></button>
     </section>
     <section class="sidebar" id="side-menu">
-        <div class="side-item">
-            <p class="side-item-text">The Land</p>
-        </div>
-        <div class="side-item">
-            <p class="side-item-text">The Climate</p>
-        </div>
-        <div class="side-item">
-            <p class="side-item-text">Plants and Animals</p>
-        </div>
-        <div class="side-item">
-            <p class="side-item-text">Major Cities</p>
-        </div>
-        <div class="side-item">
-            <p class="side-item-text">State Demographics</p>
-        </div>
-        <div class="side-item">
-            <p class="side-item-text">Tourist Attractions</p>
-        </div>
-        <div class="side-item">
-            <p class="side-item-text">Significant Industries</p>
-        </div>
-        <div class="side-item">
-            <p class="side-item-text">Colleges and Universities</p>
-        </div>
-        <div class="side-item">
-            <p class="side-item-text">Michigan's Symbols</p>
-        </div>
-        <div class="side-item">
-            <p class="side-item-text">Extras</p>
-        </div>
+        <a href="#land">
+            <div class="side-item">
+                <p class="side-item-text">The Land</p>
+            </div>
+        </a>
+        <a href="#climate">
+            <div class="side-item">
+                <p class="side-item-text">The Climate</p>
+            </div>
+        </a>
+        <a href="#nature">
+            <div class="side-item">
+                <p class="side-item-text">Plants and Animals</p>
+            </div>
+        </a>
+        <a href="#metropolitan">
+            <div class="side-item">
+                <p class="side-item-text">Major Cities</p>
+            </div>
+        </a>
+        <a href="#demographics">
+            <div class="side-item">
+                <p class="side-item-text">State Demographics</p>
+            </div>
+        </a>
+        <a href="#tourist">
+            <div class="side-item">
+                <p class="side-item-text">Tourist Attractions</p>
+            </div>
+        </a>
+        <a href="#industry">
+            <div class="side-item">
+                <p class="side-item-text">Significant Industries</p>
+            </div>
+        </a>
+        <a href="#education">
+            <div class="side-item">
+                <p class="side-item-text">Colleges and Universities</p>
+            </div>
+        </a>
+        <a href="#symbolism">
+            <div class="side-item">
+                <p class="side-item-text">Michigan's Symbols</p>
+            </div>
+        </a>
+        <a href="#extras">
+            <div class="side-item">
+                <p class="side-item-text">Extras</p>
+            </div>
+        </a>
     </section>
     <section class="cards">
-        <div class="card card--land">
+        <div class="card card--land" id="land">
             <div class="part-one">
                 <img class="card-img" title="Forest and water in Michigan" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.michigan.org%2Fsites%2Fdefault%2Ffiles%2Fuploads%2F2017%2FLumbermann%27s%2520Monument_michigan_scenery.jpeg&f=1&nofb=1" alt="forest and water">
             </div>
@@ -62,7 +84,7 @@
                     while allowing it to sustain industry. </p>
             </div>
         </div>
-        <div class="card card--climate">
+        <div class="card card--climate" id="climate">
             <div class="part-one">
                 <h2 class="card-title reversed">The Climate</h2>
                 <p class="card-desc reversed"> The climate in Michigan is like that of any temperate zone country. 
@@ -74,7 +96,7 @@
                 <img class="card-img" title="Snowy Forest" src="https://m.media-amazon.com/images/I/61qBaKk+88L._SL1000_.jpg" alt="snow in michigan">
             </div>
         </div>
-        <div class="card card--plants-animals">
+        <div class="card card--plants-animals" id="nature">
             <div class="part-one">
                 <img class="card-img" title="Fox Squirrel" src="https://upload.wikimedia.org/wikipedia/commons/4/41/Fox_Squirrel_%2814539535789%29.jpg" alt="fox squirrel">
             </div>
@@ -101,7 +123,7 @@
                 </p>
             </div>
         </div>
-        <div class="card card--cities">
+        <div class="card card--cities" id="metropolitan">
             <div class="part-one">
                 <h2 class="card-title reversed">Major Cities</h2>
                 <p class="card-desc reversed">Michigan has several major cities, 
@@ -123,7 +145,7 @@
                 <img class="card-img" title="Detroit, MI" src="https://cdn.britannica.com/25/100325-050-82D6E189/Detroit-Michigan.jpg" alt="detroit, michigan">
             </div>
         </div>
-        <div class="card card--demographics">
+        <div class="card card--demographics" id="demographics">
             <div class="part-one">
                 <img class="card-img" src="https://miro.medium.com/max/1400/0*P-B5u7lHg2rawpEp" alt="chart of michigan's 2010 demographics">
             </div>
@@ -137,7 +159,7 @@
                 </p>
             </div>
         </div>
-        <div class="card card--tourist">
+        <div class="card card--tourist" id="tourist">
             <div class="part-one">
                 <h2 class="card-title reversed">Tourist Attractions</h2>
                 <p class="card-desc reversed"> There's many things to see in Michigan. 
@@ -151,7 +173,7 @@
                 <img class="card-img" title="Mackinac Bridge" src="https://cdn.britannica.com/48/97348-050-D17E4F24/Mackinac-Bridge-Straits-of-Michigan.jpg" alt="mackinac bridge">
             </div>
         </div>
-        <div class="card card--industry">
+        <div class="card card--industry" id="industry">
             <div class="part-one">
                 <img class="card-img" title="Power Plant" src="https://news.berkeley.edu/wp-content/uploads/2018/05/hunterpointpp2006.jpg" alt="power plant">
             </div>
@@ -169,7 +191,7 @@
                 </p>
             </div>
         </div>
-        <div class="card card--schools">
+        <div class="card card--schools" id="education">
             <div class="part-one">
                 <h2 class="card-title reversed">Colleges and Universities</h2>
                 <p class="card-desc reversed"> 
@@ -182,14 +204,14 @@
                 <img class="card-img" title="University of Michigan" src="https://michigan.law.umich.edu/sites/default/files/styles/primary_hero_scale_and_crop_630px_350px_/public/2021-04/UMLS_Beauty_2018_001_webbed_0.jpg?itok=h3CM8VPp" alt="university of michigan">
             </div>
         </div>
-        <div class="card card--state-pride">
+        <div class="card card--state-pride" id="symbolism">
             <div class="part-one">
                 <img class="card-img" src="https://cdn.shopify.com/s/files/1/1381/2825/products/64def3eabbf27f60d7c988fb47febbb9_580x@2x.png?v=1520906341" alt="michigan state flag">
             </div>
             <div class="part-two">
                 <h2 class="card-title">Michigan's Symbols</h2>
                 <p class="card-desc"> Here are Michigan's State Symbols, as said 
-                    <a href="https://www.michigan.gov/documents/mhc_mhm_statesymbols2002_47909_7.pdf" target="_blank">here</a>: 
+                    <a id="symbol-link" href="https://www.michigan.gov/documents/mhc_mhm_statesymbols2002_47909_7.pdf" target="_blank">here</a>: 
                     <ul>
                         <li>State Tree: White Pine</li>
                         <li>State Flower: Apple Blossom</li>
@@ -202,9 +224,9 @@
                 </p>
             </div>
         </div>
-        <div class="card card--extras">
-            <h2 class="card-title">Extras</h2>
-            <p class="card-desc">Michigan is the best!</p>
+        <div class="card card--extras" id="extras">
+            <div class="part-one"></div>
+            <div class="part-two"></div>
         </div>
     </section>
     
