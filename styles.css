@@ -96,6 +96,7 @@ ul, ol {
     height: 5rem;
     width: 5rem;
     border: none;
+    border-radius: 100%;
     font-size: 2.5rem;
     background-color: var(--michigan-green);
     color: white;
@@ -174,6 +175,7 @@ ul, ol {
 
 .card-img {
     height: 35rem;
+    border-radius: 7px;
     transition: transform 0.3s;
 }
 
