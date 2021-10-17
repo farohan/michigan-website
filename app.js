@@ -22,8 +22,18 @@ upScroller.addEventListener('click', slideScrollerUp);
 const sidebar = document.getElementById('side-menu');
 
 function openSesame() {
-    if (sidebar.style.width == '33vw') 
+    if (sidebar.style.width == '33vw') {
         sidebar.style.width = '0';
-    else
+        document.body.style.backgroundColor = 'white';
+        document.body.focus();
+        sidebar.blur();
+    }
+    else {
         sidebar.style.width = '33vw';
+        document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+        document.body.blur();
+        sidebar.focus();
+    }
 }
+
+
