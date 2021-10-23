@@ -196,6 +196,24 @@ ul, ol {
     font-weight: bold;
 }
 
+.hero-end {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://i.redd.it/r2g4n4bcz7f51.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#the-end {
+    color: white;
+    font-size: 8.75rem;
+    text-shadow: 4px 4px rgba(58, 56, 56, 0.55);
+    text-align: center;
+}
+
 /*For tablets*/
 
 @media screen and (max-width: 725px) {
